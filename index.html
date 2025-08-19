@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Isaac Sammy Gidali - Software Engineer</title>
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Portfolio of Isaac Sammy Gidali, an AI Software Engineering student at Centennial College. Showcasing projects in web development, AI, and software engineering.">
+    <meta name="keywords" content="Isaac Sammy Gidali, Software Engineer, AI Developer, Web Developer, Portfolio, Centennial College, Toronto">
+    <meta name="author" content="Isaac Sammy Gidali">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://your-portfolio-url.com/">
+    <meta property="og:title" content="Isaac Sammy Gidali - Software Engineer Portfolio">
+    <meta property="og:description" content="Portfolio of Isaac Sammy Gidali, an AI Software Engineering student at Centennial College. Showcasing projects in web development, AI, and software engineering.">
+    <meta property="og:image" content="https://your-portfolio-url.com/images/profile.jpg">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://your-portfolio-url.com/">
+    <meta property="twitter:title" content="Isaac Sammy Gidali - Software Engineer Portfolio">
+    <meta property="twitter:description" content="Portfolio of Isaac Sammy Gidali, an AI Software Engineering student at Centennial College. Showcasing projects in web development, AI, and software engineering.">
+    <meta property="twitter:image" content="https://your-portfolio-url.com/images/profile.jpg">
+     
+<noscript>
+  <style>
+    #skills, #contact {
+      opacity: 1 !important;
+      transform: none !important;
+    }
+  </style>
+</noscript>
+     
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Isaac Sammy Gidali",
+      "url": "https://your-portfolio-url.com/",
+      "image": "https://your-portfolio-url.com/images/profile.jpg",
+      "jobTitle": "Software Engineer",
+      "worksFor": {
+        "@type": "Organization",
+        "name": "Centennial College"
+      },
+      "alumniOf": {
+        "@type": "EducationalOrganization",
+        "name": "Centennial College"
+      },
+      "sameAs": [
+        "https://github.com/NP-C17",
+        "mailto:lumireisaac@gmail.com"
+      ]
+    }
+    </script>
+    
+    <link rel="stylesheet" href="styles.css">
+    <!-- Preconnect to external resources for faster loading -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+</head>
+<body>
+<!-- Loading Screen -->
+    <div id="loading-overlay" class="loading-overlay">
+        <div class="loading-content">
+            <div class="loading-spinner"></div>
+            <h2 class="loading-text">Loading Portfolio</h2>
+        </div>
+        <canvas id="particle-canvas"></canvas>
+    </div>
+
+    
+    <!-- Navigation -->
+    <nav class="navbar" role="navigation" aria-label="Main navigation">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-text">ISG</span>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#projects" class="nav-link">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#skills" class="nav-link">Skills</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            <div class="nav-controls">
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <div class="hamburger" aria-label="Toggle navigation menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main id="main-content">
+        <!-- Hero Section -->
+        <section id="home" class="hero" aria-label="Hero section">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">
+                        <span class="gradient-text">Isaac Sammy Gidali</span>
+                    </h1>
+                    <h2 class="hero-subtitle">Software Engineer/Graphic Designer</h2>
+                    <p class="hero-description">
+                        Passionate about AI and software engineering, creating innovative solutions that make a difference.
+                        
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#projects" class="btn btn-primary">View My Work</a>
+                        <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div class="floating-card">
+                        <div class="card-content">
+                            <i class="fas fa-code" aria-hidden="true"></i>
+                            <span>AI & Software Engineering</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="scroll-indicator">
+                <div class="scroll-arrow"></div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about" aria-labelledby="about-heading">
+            <div class="container">
+                <h2 class="section-title" id="about-heading">About Me</h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p class="about-description">
+                            I'm an AI software engineering student at Centennial College, scheduled to complete my studies in 2027. 
+                            My passion lies in developing innovative software solutions and exploring the fascinating world of artificial intelligence.
+                        </p>
+                        <p class="about-description">
+                            I believe in creating technology that not only solves problems but also enhances people's lives. 
+                            My journey in software engineering is driven by curiosity, creativity, and a desire to make meaningful contributions to the tech industry.
+                        </p>
+                        <div class="about-actions">
+                            <a href="#" class="btn btn-primary" id="resumeBtn">
+                                <i class="fas fa-download"></i>
+                                Download Resume
+                            </a>
+                            <button class="btn btn-secondary" id="timelineBtn">
+                                <i class="fas fa-clock"></i>
+                                View Timeline
+                            </button>
+                        </div>
+                        <div class="about-stats">
+                            <div class="stat">
+                                <span class="stat-number">2027</span>
+                                <span class="stat-label">Graduation</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-number">AI</span>
+                                <span class="stat-label">Specialization</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-number">100%</span>
+                                <span class="stat-label">Dedication</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-image">
+                        <img src="images/DSC_9734 copy.jpg" alt="Isaac Sammy Gidali - Professional Photo" class="profile-image" loading="lazy" fetchpriority="high">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Timeline Modal -->
+        <div id="timelineModal" class="modal">
+            <div class="modal-content timeline-modal glass-effect">
+                <span class="close">&times;</span>
+                <h2>My Journey</h2>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <h3>2022 - 2024</h3>
+                            <h4>Information Technology</h4>
+                            <p>Kenya College of Accountancy University, Nairobi</p>
+                            <p>I completed a Diploma in Information Technology, gaining a solid
+                               foundation in programming, networking, databases, web development, and systems administration.</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <h3>2024 - Present</h3>
+                            <h4>AI Software Engineering Student</h4>
+                            <p>Centennial College, Toronto</p>
+                            <p>Focusing on artificial intelligence, machine learning, and software development fundamentals.</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <h3>2024</h3>
+                            <h4>FC Balokole Website</h4>
+                            <p>Developed comprehensive website for hometown football club</p>
+                            <p>Technologies: HTML, CSS, JavaScript, Responsive Design</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <h3>2027</h3>
+                            <h4>Expected Graduation</h4>
+                            <p>Bachelor's Degree in AI Software Engineering</p>
+                            <p>Ready to enter the tech industry with cutting-edge skills</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects" aria-labelledby="projects-heading">
+            <div class="container">
+                <h2 class="section-title" id="projects-heading">Featured Projects</h2>
+                <div class="projects-grid">
+                    <div class="project-card featured glass-effect" role="article" aria-labelledby="project1-title">
+                        <div class="project-image">
+                            <img src="images/Screenshot 2025-08-14 171300.png" alt="FC Balokole Website - Team Gallery" loading="lazy">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="https://balokolewebsite.onrender.com" target="_blank" class="project-link" title="Live Demo">
+                                        <i class="fas fa-external-link-alt"></i>
+                                    </a>
+                                    <a href="https://github.com/NP-C17" target="_blank" class="project-link" title="View Code">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                    <button class="project-link project-gallery-btn" title="View Gallery">
+                                        <i class="fas fa-images"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title" id="project1-title">FC Balokole Website</h3>
+                            <p class="project-description">
+                                A comprehensive website for my hometown football club, featuring team information, 
+                                match schedules, player profiles, and community engagement features. The site includes
+                                an interactive team gallery, live match fixtures, and a complete management system.
+                            </p>
+                            <div class="project-tech">
+                                <span class="tech-tag">HTML</span>
+                                <span class="tech-tag">CSS</span>
+                                <span class="tech-tag">JavaScript</span>
+                                <span class="tech-tag">Responsive Design</span>
+                            </div>
+                            <div class="project-features">
+                                <span class="feature">Team Gallery</span>
+                                <span class="feature">Match Scheduling</span>
+                                <span class="feature">Player Profiles</span>
+                                <span class="feature">Contact Forms</span>
+                            </div>
+                            <div class="project-stats">
+                                <div class="stat-item">
+                                    <span class="stat-number">5+</span>
+                                    <span class="stat-label">Pages</span>
+                                </div>
+                                <div class="stat-item">
+                                    <span class="stat-number">100%</span>
+                                    <span class="stat-label">Mobile</span>
+                                </div>
+                                <div class="stat-item">
+                                    <span class="stat-number">Fast</span>
+                                    <span class="stat-label">Performance</span>
+                                </div>
+                            </div>
+                            <div class="project-case-study">
+                                <h4 class="case-study-title">Project Case Study</h4>
+                                <div class="case-study-content">
+                                    <div class="case-study-section">
+                                        <h5 class="case-study-subtitle">The Problem</h5>
+                                        <p>FC Balokole, a local football club in my hometown, needed an online presence to engage with fans, share match updates, and manage team information. They lacked a professional website to showcase their activities and connect with the community.</p>
+                                    </div>
+                                    <div class="case-study-section">
+                                        <h5 class="case-study-subtitle">The Solution</h5>
+                                        <p>I developed a comprehensive website featuring team information, match schedules, player profiles, and community engagement tools. The site includes an interactive team gallery, live match fixtures, and a complete management system to help the club maintain their online presence.</p>
+                                    </div>
+                                    <div class="case-study-section">
+                                        <h5 class="case-study-subtitle">Technologies Used</h5>
+                                        <ul class="tech-list">
+                                            <li>HTML5 for semantic markup and structure</li>
+                                            <li>CSS3 for responsive styling and modern design</li>
+                                            <li>JavaScript for interactive elements and dynamic content</li>
+                                            <li>Responsive Design principles for cross-device compatibility</li>
+                                        </ul>
+                                    </div>
+                                    <div class="case-study-section">
+                                        <h5 class="case-study-subtitle">Results</h5>
+                                        <p>The website successfully launched with 15+ pages, achieving 100% mobile responsiveness and fast loading performance. The club now has a professional online presence to engage with fans and share updates about their activities.</p>
+                                        <div class="results-stats">
+                                            <div class="results-stat">
+                                                <span class="stat-number">15+</span>
+                                                <span class="stat-label">Website Pages</span>
+                                            </div>
+                                            <div class="results-stat">
+                                                <span class="stat-number">100%</span>
+                                                <span class="stat-label">Mobile Responsive</span>
+                                            </div>
+                                            <div class="results-stat">
+                                                <span class="stat-number">Fast</span>
+                                                <span class="stat-label">Loading Speed</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Project Gallery Modal -->
+        <div id="projectModal" class="modal">
+            <div class="modal-content glass-effect">
+                <span class="close">&times;</span>
+                <h2>FC Balokole Website Gallery</h2>
+                <div class="gallery-grid">
+                    <div class="gallery-item">
+                        <img src="images/Screenshot 2025-08-12 151522.png" alt="Team Gallery" loading="lazy">
+                        <div class="gallery-caption">Team Gallery with Filtering</div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="images/Screenshot 2025-08-12 151547.png" alt="Contact Form" loading="lazy">
+                        <div class="gallery-caption">Interactive Contact Form</div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="images/Screenshot 2025-08-12 151505.png" alt="Match Fixtures" loading="lazy">
+                        <div class="gallery-caption">Live Match Fixtures</div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="images/Screenshot 2025-08-12 151432.png" alt="Team Roster" loading="lazy">
+                        <div class="gallery-caption">Team Roster & Profiles</div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="images/Screenshot 2025-08-12 151401.png" alt="News Section" loading="lazy">
+                        <div class="gallery-caption">Latest News & Updates</div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="images/Screenshot 2025-08-12 151418.png" alt="Services" loading="lazy">
+                        <div class="gallery-caption">Club Services Overview</div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="images/Screenshot 2025-08-12 151432.png" alt="Player Profiles" loading="lazy">
+                        <div class="gallery-caption">Detailed Player Profiles</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Simplified Skills Section -->
+        <section id="skills" class="skills" aria-labelledby="skills-heading">
+            <div class="container">
+                <h2 class="section-title" id="skills-heading">Skills & Technologies</h2>
+                <div class="skills-content">
+                    <div class="skills-category">
+                        <h3 class="category-title">Programming Languages</h3>
+                        <div class="skills-grid">
+                            <div class="skill-item">
+                                <i class="fab fa-html5"></i>
+                                <span class="skill-name">HTML5</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fab fa-html5"></i>
+                                <span class="skill-name">C#</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fab fa-css3-alt"></i>
+                                <span class="skill-name">CSS3</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fab fa-js-square"></i>
+                                <span class="skill-name">JavaScript</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fab fa-python"></i>
+                                <span class="skill-name">Python</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="skills-category">
+                        <h3 class="category-title">Technologies & Tools</h3>
+                        <div class="skills-grid">
+                            <div class="skill-item">
+                                <i class="fas fa-code"></i>
+                                <span>Web Development</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fas fa-brain"></i>
+                                <span>Artificial Intelligence</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fas fa-mobile-alt"></i>
+                                <span>Responsive Design</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fas fa-database"></i>
+                                <span>Data Structures</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Simplified Contact Section -->
+        <section id="contact" class="contact" aria-labelledby="contact-heading">
+            <div class="container">
+                <h2 class="section-title" id="contact-heading">Get In Touch</h2>
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <h3 class="contact-subtitle">Let's Connect</h3>
+                        <p class="contact-description">
+                            I'm always interested in new opportunities, collaborations, and interesting projects. 
+                            Feel free to reach out!
+                        </p>
+                        <div class="contact-methods">
+                            <div class="contact-method">
+                                <i class="fas fa-envelope"></i>
+                                <div class="contact-details">
+                                    <span class="contact-label">Email</span>
+                                    <a href="mailto:lumireisaac@gmail.com" class="contact-value">lumireisaac@gmail.com</a>
+                                </div>
+                            </div>
+                            <div class="contact-method">
+                                <i class="fab fa-github"></i>
+                                <div class="contact-details">
+                                    <span class="contact-label">GitHub</span>
+                                    <a href="https://github.com/NP-C17" target="_blank" class="contact-value">@NP-C17</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contact-form">
+                        <form class="form" action="https://formspree.io/f/mwkdbqgl" method="POST">
+                            <input type="hidden" name="_subject" value="New submission from your portfolio website">
+                            <input type="hidden" name="_next" value="https://your-portfolio-url.com/thanks.html">
+                            <input type="text" name="_gotcha" style="display:none">
+                            <div class="form-group">
+                                <input type="text" id="name" name="name" placeholder="Your Name" required aria-required="true">
+                            </div>
+                            <div class="form-group">
+                                <input type="email" id="email" name="email" placeholder="Your Email" required aria-required="true">
+                            </div>
+                            <div class="form-group">
+                                <input type="text" id="subject" name="subject" placeholder="Subject" required aria-required="true">
+                            </div>
+                            <div class="form-group">
+                                <textarea id="message" name="message" placeholder="Your Message" rows="5" required aria-required="true"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <span class="logo-text">ISG</span>
+                    <p class="footer-tagline">Building the future with AI & Code</p>
+                </div>
+                <div class="footer-links">
+                    <a href="#home">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#blog">Blog</a>
+                    <a href="#skills">Skills</a>
+                    <a href="#contact">Contact</a>
+                </div>
+                <div class="footer-social">
+                    <a href="https://github.com/NP-C17" target="_blank" class="social-link" aria-label="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="mailto:lumireisaac@gmail.com" class="social-link" aria-label="Email">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                    <a href="#" class="social-link" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="#" class="social-link" aria-label="Twitter">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Isaac Sammy Gidali. All rights reserved.</p>
+                <p class="footer-location">📍 Toronto, Canada | 🎓 Centennial College</p>
+            </div>
+        </div>
+    
+    </footer>
+
+    <!-- Site Scripts -->
+    <script src="script.js" defer></script>
+</body>
+</html>
